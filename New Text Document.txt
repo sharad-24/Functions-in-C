@@ -1,0 +1,33 @@
+#include <stdio.h>
+int fun(int x,int y,int z,int c);
+int main()
+{
+    int n1,n2,n3,n4;
+    scanf("%d%d%d%d" ,&n1,&n2,&n3,&n4);
+
+   fun(n1,n2,n3,n4);
+    return 0;
+}
+int fun(int x,int y,int z,int c)
+{
+if  ((x>y)&&(x>z)&&(x>c))
+{
+    printf("%d\n" ,x);
+    return (x);
+}
+else if ((y>x)&&(y>z)&&(y>c))
+{
+ printf("%d\n" ,y);
+    return (y);
+}
+else if ((z>x)&&(z>y)&&(z>c))
+{
+ printf("%d\n" ,z);
+    return (z);
+}
+else
+
+    printf("%d\n" ,c);
+    return (c);
+
+}
